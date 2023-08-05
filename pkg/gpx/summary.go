@@ -9,7 +9,7 @@ type Summary struct {
 	Elevation     ElevationData
 }
 
-func (a *Activity) ProduceSummary() Summary {
+func (a *Activity) GenerateSummary() Summary {
 	summary := Summary{}
 	summary.TotalDistance = a.TotalDistance()
 	summary.TotalTime = a.TotalTime()
