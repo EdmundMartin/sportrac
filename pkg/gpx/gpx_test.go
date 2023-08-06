@@ -1,6 +1,7 @@
 package gpx
 
 import (
+	"fmt"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"testing"
@@ -13,6 +14,8 @@ func TestLoadActivity(t *testing.T) {
 	activity, err := LoadActivity(filename)
 	assert.NoError(t, err)
 	assert.NotNil(t, activity)
+
+	fmt.Println(activity.XMLName)
 }
 
 func TestLoadActivity_Metadata(t *testing.T) {

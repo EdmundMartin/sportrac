@@ -13,7 +13,7 @@ func TestLoadFile(t *testing.T) {
 	assert.NoError(t, err)
 	assert.NotNil(t, tcxF)
 
-	fmt.Println(tcxF)
+	fmt.Println(tcxF.XMLName)
 }
 
 func TestTcxFile_TotalDistance(t *testing.T) {
